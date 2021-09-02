@@ -37,10 +37,10 @@ async def stats(e):
 async def encod(event):
     try:
         if not event.is_private:
-            return
+            await event.reply("Sorry kid , But you are not authorized to use this bot")
         event.sender
         if str(event.sender_id) not in OWNER:
-            return
+            await event.reply("Sorry kid , But you are not authorized to use this bot")
         if not event.media:
             return
         if hasattr(event.media, "document"):

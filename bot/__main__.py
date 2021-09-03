@@ -30,7 +30,7 @@ except Exception as er:
 
 
 ####### GENERAL CMDS ########
-
+capu = "@Animes_Encoded"
 
 @bot.on(events.NewMessage(pattern="/start"))
 async def _(e):
@@ -166,6 +166,11 @@ async def something():
                             progress(d, t, nnn, ttt, "📤.UPLAODING.📤")
                         ),
                     )
+                await sent_message.edit_text(
+                text=Localisation.ok
+            )
+            u_start = time.time()
+            caption = Localisation.capu
                 ds = await e.client.send_file(
                     e.chat_id, file=ok, force_document=True, thumb=thum
                 )

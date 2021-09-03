@@ -30,7 +30,7 @@ except Exception as er:
 
 
 ####### GENERAL CMDS ########
-capu = "@Animes_Encoded"
+
 
 @bot.on(events.NewMessage(pattern="/start"))
 async def _(e):

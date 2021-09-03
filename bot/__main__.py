@@ -166,7 +166,7 @@ async def something():
                             progress(d, t, nnn, ttt, "📤.UPLAODING.📤")
                         ),
                     )
-               
+
                 ds = await e.client.send_file(
                     e.chat_id, file=ok, force_document=True, thumb=thum
                 )

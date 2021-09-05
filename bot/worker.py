@@ -18,8 +18,6 @@ from .FastTelethon import download_file, upload_file
 from .funcn import *
 
 
-
-
 async def stats(e):
     try:
         wah = e.pattern_match.group(1).decode("UTF-8")
@@ -156,7 +154,7 @@ async def encod(event):
                     progress(d, t, nnn, ttt, "📤.UPLAODING.📤")
                 ),
             )
-        
+
         ds = await e.client.send_file(
             e.chat_id, file=ok, force_document=True, thumb=thum
         )

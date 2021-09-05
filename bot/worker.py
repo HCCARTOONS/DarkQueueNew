@@ -17,7 +17,7 @@
 from .FastTelethon import download_file, upload_file
 from .funcn import *
 
-capu = "@Animes_Encoded"
+
 
 
 async def stats(e):
@@ -156,9 +156,7 @@ async def encod(event):
                     progress(d, t, nnn, ttt, "📤.UPLAODING.📤")
                 ),
             )
-        await sent_message.edit_text(text=Localisation.ok)
-        time.time()
-        Localisation.capu
+        
         ds = await e.client.send_file(
             e.chat_id, file=ok, force_document=True, thumb=thum
         )
